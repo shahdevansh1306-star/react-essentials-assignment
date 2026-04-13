@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --bg: #f4efe6;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+  --ink: #111827;
+  --muted: #5b6474;
+  --accent: #f97316;
+  --accent-soft: #ffe8d6;
+  --ring: rgba(249, 115, 22, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(244, 114, 182, 0.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(253, 186, 116, 0.16), transparent 24%),
+    linear-gradient(180deg, #fcfaf6 0%, #f5efe5 45%, #f0e7d8 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.display-serif {
+  font-family: "Fraunces", serif;
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.58));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  box-shadow: 0 20px 80px rgba(15, 23, 42, 0.08);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(17, 24, 39, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 24, 39, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.glow-ring {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.58),
+    0 20px 60px rgba(249, 115, 22, 0.18);
+}
+
+.floating-basket {
+  animation: float-basket 6s ease-in-out infinite;
+}
+
+.ambient-pulse {
+  animation: ambient-pulse 5s ease-in-out infinite;
+}
+
+.soft-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.soft-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(17, 24, 39, 0.16);
+  border-radius: 999px;
+}
+
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+    radial-gradient(circle at 80% 30%, rgba(17, 24, 39, 0.18) 1px, transparent 1px),
+    radial-gradient(circle at 30% 80%, rgba(17, 24, 39, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px, 34px 34px, 22px 22px;
+}
+
+@keyframes float-basket {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(1deg);
+  }
+}
+
+@keyframes ambient-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.72;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
