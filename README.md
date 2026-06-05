@@ -3,8 +3,10 @@
 A comprehensive React learning project covering all 9 modules from the TuteDude React course. All assignments are combined into a single unified app.
 
 ## 🚀 Live Demo
+https://react-essentials-assignment-xutv.vercel.app
 
-> Add your deployment link here after deploying
+## GitHub Repository
+https://github.com/shahdevansh1306-star/react-essentials-assignment
 
 ## 📦 Modules Included
 
@@ -32,7 +34,7 @@ A comprehensive React learning project covering all 9 modules from the TuteDude 
 ## 📁 Project Structure
 
 ```
-src/
+src/x
 ├── components/
 │   └── BackButton.jsx
 ├── context/
@@ -56,51 +58,6 @@ src/
 ├── main.jsx
 └── index.css
 ```
-
-## ⚙️ Setup & Run Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/react-essentials-assignment
-cd react-essentials-assignment
-
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## 🚀 Deploy to Netlify
-
-1. Push code to GitHub
-2. Go to [netlify.com](https://netlify.com) → New site from Git
-3. Connect your GitHub repo
-4. Set build command: `npm run build`
-5. Set publish directory: `dist`
-6. Click **Deploy**
-
-> ⚠️ For Netlify, add a `_redirects` file in the `public/` folder:
-> ```
-> /* /index.html 200
-> ```
-
-## 🚀 Deploy to Vercel
-
-```bash
-npm i -g vercel
-vercel
-```
-
-Follow the prompts. Vercel auto-detects Vite projects.
-
-## Screenshots
-
-> Add screenshots of each module here
-
 ## Author
 
 Your Name — [GitHub](https://github.com/yourusername)
