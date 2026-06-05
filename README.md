@@ -60,4 +60,5 @@ src/x
 ```
 ## Author
 
-Your Name — [GitHub](https://github.com/yourusername)
+Devansh Shah —
+https://github.com/shahdevansh1306-star/react-essentials-assignment
